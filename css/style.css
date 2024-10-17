@@ -1,0 +1,209 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    display: flex;
+}
+
+.left__sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.right__sidebar {
+    padding: 20px;
+    width: 80%;
+    background-color: beige;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.data {
+    text-align: center;
+}
+
+.flex__container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.flex__container p {
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.date__personale {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.trimitere__spitalizare-consultatie {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input {
+    width: 250px;
+    padding: 8px 14px;
+    outline: 2px solid bisque;
+    outline-offset: 3px;
+    border-radius: 12px;
+    border: none;
+    background-color: bisque;
+}
+
+.select {
+    width: 278px;
+    padding: 8px 14px;
+    outline: 2px solid bisque;
+    outline-offset: 3px;
+    border-radius: 12px;
+    border: none;
+    background-color: bisque;
+}
+
+.span__wrapper {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.span__wrapper span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 8px 14px;
+    max-width: 100px;
+    width: 100%;
+    border-radius: 14px;
+    outline: 2px solid bisque;
+    outline-offset: 3px;
+    border: 2px solid bisque;
+    background-color: bisque;
+}
+
+/* Lista pacientilor */
+.pacients__list-wrapper {
+    display: flex;
+    /* max-width: 960px; */
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Titlurile la lista pacientilor */
+.pacients__list-header {
+    max-width: 25%;
+    width: 100%;
+}
+
+.pacients__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    /* max-width: 960px; */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* element din lista pacientilor */
+.pacients__item {
+    display: flex;
+    border: 1px solid brown;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* container pentru datele introduse in element */
+.pacient__data {
+    margin: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+/* fondal in dependenta de trimitere selectata */
+
+.consult {
+    background-color: #72BF78;
+}
+
+.spitalizare {
+    background-color: #FEFF9F;
+}
+
+.investigatie {
+    background-color: #08C2FF;
+}
+
+/* investigatii */
+
+.investigatii {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.rmn, .tomografie {
+    display: none;
+}
+
+/* analize de laborator */
+
+.imunologie, .hormoni, .onco {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.spitalizare__wrapper, .investigatii__wrapper, .analize__wrapper {
+    display: none;
+}
+
+.imunologie__wrapper, .hormoni__wrapper, .onco__wrapper {
+    display: none;
+}
+
+.analize {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.tip_analize {
+    align-self: center;
+}
+
+.hospital__data-analize {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* .rapoarte {
+    display: none;
+} */

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="left__sidebar">
+            <button type="button" class="rmn__btn">Raport RMN</button>
+        </div>
+        <div class="right__sidebar">
+            <div class="container data">
+                <!-- Titlu app -->
+                <h1 class="main__title">CMC</h1>
+                <!-- Forma de colectare date -->
+                    <form action="" class="form">
+                        <!-- Date personale -->
+                        <h2>Date de identificare</h2>
+                        <div class="date__personale">
+                            <div class="span__wrapper">
+                                <span>Data Adresare</span>
+                                <input type="date" placeholder="Data adresare" class="input input__data-adresare">
+                            </div>
+                            <div class="span__wrapper">
+                                <span>Numele, Prenumele</span>
+                                <input type="text" placeholder="Numele, prenumele" class="input input__name">
+                            </div>                                  
+                            <div class="span__wrapper">
+                                <span>Data Nastere</span>
+                                <input type="date" name="Data Nastere" class="input input__data-nastere">
+                            </div>                                  
+                            <div class="span__wrapper">
+                                <span>Localitate</span>
+                                <select class="select input__city">
+                                    <option value="city" selected>
+                                        Localicatate
+                                    </option>
+                                    <option value="Cimislia">Cimislia</option>
+                                    <option value="Basarabeasca">Basarabeasca</option>
+                                    <option value="Ciucur Mingir">Ciucur Mingir</option>
+                                </select>
+                            </div>                                  
+                            <div class="span__wrapper">
+                                <span>Adresa</span>
+                                <input type="text" placeholder="Adresa" class="input input__adress">
+                            </div>                                  
+                            <div class="span__wrapper">
+                                <span>IDNP</span>
+                                <input type="number" placeholder="IDNP" class="input input__idnp">
+                            </div>                                  
+                            <div class="span__wrapper">
+                                <span>Ocupatie</span>
+                                <input type="text" placeholder="Ocupatie" class="input input__ocupatie">
+                            </div>                                  
+                            <div class="span__wrapper">
+                                <span>Diagnoza</span>
+                                <input type="text" placeholder="Diagnoza" class="input input__diagnoza">
+                            </div>
+                            <div class="span__wrapper">
+                                <span>Medic</span>
+                                <select class="select input__medic">
+                                    <option value="city" selected>
+                                        Medic
+                                    </option>
+                                    <option value="Iacubitchi Aurelia">Iacubitchi Aurelia</option>
+                                    <option value="Capcelea Ludmila">Capcelea Ludmila</option>
+                                    <option value="Topalov Igor">Topalov Igor</option>
+                                </select>
+                            </div>                                      
+                        </div>
+                        
+                   <!-- date depsre trimitere -->
+        
+                    <div class="trimitere">
+                        <h2>Trimitere</h2>
+                        <select name="" id="typeInvestigation" class="select select__type-investigation">
+                            <option value="send" selected></option>
+                            <option value="Consultatie">Consultatie</option>
+                            <option value="Spitalizare">Spitalizare</option>
+                            <option value="Investigatie">Investigatie</option>
+                            <option value="Analize">Analize</option>
+                        </select>
+                    </div>
+        
+        <!-- spitalizare / consultatie institutii republicane -->
+                    <div class="spitalizare__wrapper">
+                        <h2>Spitalizare / Consultatie la institutiile republicane</h2>
+                        <div class="trimitere__spitalizare-consultatie">
+                            <div class="span__wrapper">
+                                <span for="republicanHospital">Selectati institutia</span>
+                                <select name="" id="republicanHospital" class="select select__republican-hospital">
+                                    <option value=""></option>
+                                    <option value="Spitalul Clinic Republican">Spitalul Clinic Republican</option>
+                                    <option value="Dispensarul Dermatovenerologic">Dispensarul Dermatovenerologic</option>
+                                </select>
+                            </div>
+                            <div class="span__wrapper">
+                                <span for="specialitate">Selectati specialitate</span>
+                                <select class="select select__specialitate" id="specialitate">
+                                    <option value=""></option>
+                                    <option value="Alergolog">Alergolog</option>
+                                    <option value="Cardiochirurg Copii">Cardiochirurg Copii</option>
+                                </select>
+                            </div>
+                            <div class="span__wrapper">
+                                <span for="sectia">Selectati sectia</span>
+                                <select class="select select__sectie" id="sectia">
+                                    <option value=""></option>
+                                    <option value="Traumatologie">Traumatologie</option>
+                                    <option value="Chirurgie Vasculara">Chirurgie Vasculara</option>
+                                </select>
+                            </div>
+                            <div class="span__wrapper">
+                                <span for="data__spitalizare">Data spitalizare / consultatie</span>
+                                <input type="date" id="data__spitalizare" class="input input__data-spitalizare">
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <!-- Investigatii de inalta performanta -->
+                    <div class="investigatii__wrapper">
+                        <h2>Investigatii</h2>
+                        <div class="investigatii">
+                            <!-- tip investigatie -->
+                             <div class="span__wrapper">
+                                <span for="tip_investigatie">Selectati tip investigatie</span>
+                                <select id="tip_investigatie" class="input tip_investigatie">
+                                    <option value="type">Tip Investigatie</option>
+                                    <option value="RMN">RMN</option>
+                                    <option value="Tomografie">Tomografie</option>
+                                    <option value="Imagistica">Imagistica</option>
+                                    <option value="Endoscopie">Endoscopie</option>
+                                </select>
+                             </div>
+                         
+                            <!-- investigatii RMN -->
+                             <div class="rmn">
+                                <div class="span__wrapper">
+                                    <span for="rmn">Investigatii RMN</span>
+                                    <select id="rmn" class="input input__rmn">
+                                        <option value="" disabled selected></option>
+                                        <option value="Creer fara contrast">Creer fara contrast</option>
+                                        <option value="Creer cu contrast">Creer cu contrast</option>
+                                        <option value="Coloana cervicala fara contrast">Coloana cervicala fara contrast</option>
+                                    </select>
+                                </div>
+                             </div>
+                            <!-- Investigatii tomografie -->
+                             <div class="tomografie">
+                                <div class="span__wrapper">
+                                    <span for="tomografie">Investigatii Tomografie</span>
+                                    <select id="tomografie" class="input input__tc">
+                                        <option value="" disabled selected></option>
+                                        <option value="Tomografie Computerizata a creer">Tomografie Computerizata a creer</option>
+                                        <option value="Tomografie Computerizata a creer cu contrast">Tomografie Computerizata a creer cu contrast</option>
+                                        <option value="Tomografie Computerizata a toracelui si mediastin fara contrast">Tomografie Computerizata a toracelui si mediastin fara contrast</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <!-- institutie pentru investigatii -->
+                             <div class="span__wrapper">
+                                <span for="investigationHospital">Selectati institutia</span>
+                                <select name="" id="investigationHospital" class="select select__investigation-hospital">
+                                    <option value=""></option>
+                                    <option value="Centrul Diagnostic Republican">Centrul Diagnostic Republican</option>
+                                    <option value="Centrul Diagnostic German">Centrul Diagnostic German</option>
+                                </select>
+                            </div>
+                            <!-- data investigatiei -->
+                            <div class="span__wrapper">
+                                <span for="data__investigatie">Data investigatie</span>
+                                <input type="date" id="data__investigatie" class="input input__data-investigatie">
+                            </div>
+                        </div>
+                    </div>
+               
+                    <!-- Analize de laborator -->
+        
+                    <div class="analize__wrapper">
+                        <h2>Analize de laborator</h2>
+                        <div class="analize">
+        
+                            <!-- tip analize -->
+                            <div class="span__wrapper">
+                                <span for="tip_analize">Selectati tip analize</span>
+                                <select id="tip_analize" class="input tip_analize">
+                                    <option value="type">Tip Analize</option>
+                                    <option value="Imunologie">Imunologie</option>
+                                    <option value="Hormoni">Hormoni</option>
+                                    <option value="Oncologie">Oncologie</option>
+                                </select>
+                            </div>
+        
+                             <!-- Imunologie -->
+        
+                            <div class="imunologie__wrapper">
+                                <h2>Imunologie</h2>
+                                <div class="imunologie">
+                                <div class="analiza">
+                                    <input type="checkbox" value="Microalbuminei în urină" id="imun_01" class="imun">
+                                    Microalbuminei în urină
+                                </div>
+                                <div class="analiza">
+                                    <input type="checkbox" value="Imunoglobulinei A" id="imun_02" class="imun">
+                                    Imunoglobulinei A
+                                </div>
+                                <div class="analiza">
+                                    <input type="checkbox" value="Imunoglobulinei M" id="imun_03" class="imun">
+                                    Imunoglobulinei M   
+                                </div>
+                                <div class="analiza">
+                                    <input type="checkbox" value="Imunoglobulinei G" id="imun_03" class="imun">
+                                    Imunoglobulinei G  
+                                </div>
+                                <div class="analiza">
+                                    <input type="checkbox" value="Imunoglobulinei E  totală" id="imun_03" class="imun">
+                                    Imunoglobulinei E totală
+                                </div>
+                                <div class="analiza">
+                                    <input type="checkbox" value="Complexelor imune circulante" id="imun_03" class="imun">
+                                    Complexelor imune circulante
+                                </div>
+                                <div class="analiza">
+                                    <input type="checkbox" value="Anticorpilor anti-CCP prin metoda Elisa" id="imun_03" class="imun">
+                                    Anticorpilor anti-CCP prin metoda Elisa
+                                </div>
+                                <div class="analiza">
+                                    <input type="checkbox" value="HBs Ag  prin metoda imunofluoriscentă ferment dependent" id="imun_03" class="imun">
+                                    HBs Ag  prin metoda imunofluoriscentă ferment dependent
+                                </div>
+                                </div>
+                            </div>
+                            
+                              <!-- Hormoni -->
+        
+                            <div class="hormoni__wrapper">
+                                <h2>Hormoni</h2>
+                                <div class="hormoni">
+                                 <span for="horm_01">
+                                 <input type="checkbox" value="T3-liber prin metoda imunofluorescentă-fermentdependentă" id="horm_01" class="hormon">
+                                 T3-liber prin metoda imunofluorescentă-fermentdependentă
+                                 </span>
+                                 <span for="horm_02">
+                                 <input type="checkbox" value="T4-liber  prin metoda imunofluorescentă-fermentdependentă" id="horm_02" class="hormon">
+                                 T4-liber  prin metoda imunofluorescentă-fermentdependentă
+                                 </span>
+                                </div>
+                            </div>
+                         
+                             <!-- Oncologie -->
+                              
+                            <div class="onco__wrapper">
+                                <h2>Oncologie</h2>
+                                <div class="onco">
+                                 <span for="onco_01">
+                                 <input type="checkbox" value="PSA total prin metoda imunofluoriscentă ferment dependent" id="onco_01" class="oncologie">
+                                 PSA total prin metoda imunofluoriscentă ferment dependent
+                                 </span>
+                                 <span for="onco_02">
+                                 <input type="checkbox" value="PSA-liber prin metoda imunofluoriscentă ferment dependent" id="onco_02" class="oncologie">
+                                 PSA-liber prin metoda imunofluoriscentă ferment dependent
+                                 </span>
+                                </div>
+                            </div>
+                      </div>
+        
+                      <div class="hospital__data-analize">
+                               <!-- spital analize -->
+                      <div class="span__wrapper">
+                        <span for="analizeHospital">Selectati institutia</span>
+                        <select name="" id="analizeHospital" class="select select__analize-hospital">
+                            <option value=""></option>
+                            <option value="Centrul Diagnostic Republican">Centrul Diagnostic Republican</option>
+                            <option value="Centrul Diagnostic German">Centrul Diagnostic German</option>
+                        </select>
+                    </div>
+        
+                      <!-- data analize -->
+                      <div class="span__wrapper">
+                        <span for="data__analize">Data analize</span>
+                        <input type="date" id="data__analize" class="input input__data-analize">
+                    </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn save__btn">Salveaza</button>
+                </form>
+                
+                <!-- Formarea listei de pacienti -->
+                <div class="pacients">
+           
+                    <h2 class="pacients__title">
+                        Lista pacientilor cu investigatii
+                    </h2>
+                    <div class="pacients__list-wrapper">
+                        <p class="pacients__list-header">Nr.ord</p>
+                        <p class="pacients__list-header">Data adresare</p>
+                        <p class="pacients__list-header">Numele, prenumele</p>
+                        <p class="pacients__list-header">Data nastere</p>
+                        <p class="pacients__list-header">Localitate</p>
+                        <p class="pacients__list-header">Adresa</p>
+                        <p class="pacients__list-header">IDNP</p>
+                        <p class="pacients__list-header">Trimitere</p>
+                    </div>
+                  
+                    <ul class="pacients__list"></ul>
+                </div>
+            </div>
+            <!-- <div class="container rapoarte">
+                <h2 class="cdr__title"></h2>
+                <ul class="cdr__list"></ul>
+                <h2 class="cdg__title"></h2>
+                <ul class="cdg__list"></ul>
+            </div> -->
+        </div>
+    </main>
+    <script src="javascript/main.js" type="module"></script>
+</body>
+</html>
