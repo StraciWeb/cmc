@@ -381,8 +381,7 @@ renderList(people);
 
 
 (<HTMLButtonElement>document.querySelector(".rmn__btn")).addEventListener("click", () => {
-    console.log(window.location.href)
-    window.location.href= `/cmc/html/raport.html`;
+    window.location.assign("https://straciweb.github.io/cmc/html/raport.html")
 });
 
 
