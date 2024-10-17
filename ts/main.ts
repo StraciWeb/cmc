@@ -380,7 +380,8 @@ renderList(people);
 //rapoarte --------------------------------------------------------------------
 
 (<HTMLButtonElement>document.querySelector(".rmn__btn")).addEventListener("click", () => {
-    window.location.href= `../html/raport.html`;
+
+    window.location.href= `/cmc/html/raport.html`;
 });
 
 
