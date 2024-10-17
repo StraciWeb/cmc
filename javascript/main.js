@@ -328,6 +328,6 @@ function renderList(array) {
 renderList(people);
 //rapoarte --------------------------------------------------------------------
 document.querySelector(".rmn__btn").addEventListener("click", () => {
-    window.location.href = `html/raport.html`;
+    window.location.href = `../html/raport.html`;
 });
 //# sourceMappingURL=main.js.map
